@@ -18,6 +18,13 @@
 #define ISRHEL8
 #elif RHEL_MAJOR == 9
 #define ISRHEL9
+#elif RHEL_MAJOR == 10
+#define ISRHEL10
+#if RHEL_MINOR == 0
+#define ISRHEL100
+#elif RHEL_MINOR == 1
+#define ISRHEL101
+#endif
 #endif
 #endif
 #ifdef UTS_UBUNTU_RELEASE_ABI
