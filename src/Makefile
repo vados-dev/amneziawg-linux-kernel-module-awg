@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
 
-WIREGUARD_VERSION := $(shell git log -1 --format='1.0.%cd-awg' --date=format:'%Y%m%d-%H.%M' 2>/dev/null || echo 1.0.0-awg)
+WIREGUARD_VERSION := $(shell git log -1 --format='1.0.%cd-awg' --date=format:'%Y%m%d' 2>/dev/null || echo 1.0.0-awg)
 OMIT_ENDPOINTS ?=
 
 KERNELRELEASE ?= $(shell uname -r)
